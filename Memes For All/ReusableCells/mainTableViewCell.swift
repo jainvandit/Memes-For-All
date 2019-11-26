@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import TagListView
 
 class mainTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var memeImageView: UIImageView!
+    @IBOutlet weak var memeNameLabel: UILabel!
+    @IBOutlet weak var tagListView: TagListView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.memeImageView.layer.cornerRadius = self.memeImageView.frame.height/2
+        self.memeImageView.contentMode = .scaleAspectFill
+        self.memeImageView.clipsToBounds = true
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
