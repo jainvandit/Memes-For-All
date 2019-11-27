@@ -4,4 +4,4 @@ Memestagram is a light weight iOS Application that lets you browse through the d
 ## Design
 The app uses a simple UITableView for the home screen and a simple UICollectionView to implement the grid on the submissions screen.
 
-![Home Screen on iPhone8](https://raw.githubusercontent.com/jainvandit/Memes-For-All/master/Final%20Look%20Assets/HomeScreen.png)
+![Home Screen on iPhone8](https://raw.githubusercontent.com/jainvandit/Memes-For-All/master/Final%20Look%20Assets/HomeScreen.png = 300x526)
