@@ -9,10 +9,12 @@ The app uses a simple ```UITableView``` for the home screen and a simple ```UICo
 
 ### TagListView
 The ```TagListView``` library is implemented in each off the ```UITableViewCell```.
+
 <img src="https://raw.githubusercontent.com/jainvandit/Memes-For-All/master/Final%20Look%20Assets/TagListView.png">
 
 ### GridView
 ```UICollectionViewCell``` is dimensioned such that only 2 columns fit the frame. Each cell has one ```UIImageView``` and two ```UILabels``` for the top text and bottom text. The ```impact``` font, generally used in memes is included in assets.
+
 <img src="https://raw.githubusercontent.com/jainvandit/Memes-For-All/master/Final%20Look%20Assets/GridView.png">
 ## API
 The [Meme Maker API](https://mememaker.github.io/API/) is used to get content. In particular, for the time being only the following functionality is being used.
