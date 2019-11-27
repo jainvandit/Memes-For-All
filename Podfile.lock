@@ -1,0 +1,28 @@
+PODS:
+  - Kingfisher (5.10.1):
+    - Kingfisher/Core (= 5.10.1)
+  - Kingfisher/Core (5.10.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - TagListView (1.4.0)
+
+DEPENDENCIES:
+  - Kingfisher (~> 5.0)
+  - NVActivityIndicatorView
+  - TagListView (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - NVActivityIndicatorView
+    - TagListView
+
+SPEC CHECKSUMS:
+  Kingfisher: eb36b7dfcc78d60877051c92c119a2865972961a
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
+
+PODFILE CHECKSUM: 482d9df0f4c0e751ea111d900b77756da3bb3a99
+
+COCOAPODS: 1.8.4

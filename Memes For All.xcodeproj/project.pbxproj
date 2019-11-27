@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,14 @@
 		0628C55D238D087600F9A77A /* Memes_For_All.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0628C55B238D087600F9A77A /* Memes_For_All.xcdatamodeld */; };
 		0628C55F238D087900F9A77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0628C55E238D087900F9A77A /* Assets.xcassets */; };
 		0628C562238D087900F9A77A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0628C560238D087900F9A77A /* LaunchScreen.storyboard */; };
+		0628C56A238D10D100F9A77A /* mainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0628C569238D10D100F9A77A /* mainTableViewCell.swift */; };
+		0628C56E238D687400F9A77A /* Amsterdam Personal Use.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0628C56D238D687400F9A77A /* Amsterdam Personal Use.ttf */; };
+		0628C570238D698600F9A77A /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0628C56F238D698600F9A77A /* Billabong.ttf */; };
+		06BD85A3238DB65C005FE4C3 /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06BD85A2238DB65C005FE4C3 /* impact.ttf */; };
+		06D3B312238D77D9002AE447 /* SubmissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3B311238D77D9002AE447 /* SubmissionsViewController.swift */; };
+		06D3B315238D87D8002AE447 /* submissionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3B314238D87D8002AE447 /* submissionsCollectionViewCell.swift */; };
+		06D3B317238D8854002AE447 /* memeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3B316238D8854002AE447 /* memeData.swift */; };
+		AC9BAECBF07264D601ED6587 /* Pods_Memes_For_All.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E6C570C675A6F098CBB63 /* Pods_Memes_For_All.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,16 @@
 		0628C55E238D087900F9A77A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0628C561238D087900F9A77A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0628C563238D087900F9A77A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0628C569238D10D100F9A77A /* mainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTableViewCell.swift; sourceTree = "<group>"; };
+		0628C56D238D687400F9A77A /* Amsterdam Personal Use.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amsterdam Personal Use.ttf"; sourceTree = "<group>"; };
+		0628C56F238D698600F9A77A /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
+		06BD85A2238DB65C005FE4C3 /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = impact.ttf; sourceTree = "<group>"; };
+		06D3B311238D77D9002AE447 /* SubmissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionsViewController.swift; sourceTree = "<group>"; };
+		06D3B314238D87D8002AE447 /* submissionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = submissionsCollectionViewCell.swift; sourceTree = "<group>"; };
+		06D3B316238D8854002AE447 /* memeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memeData.swift; sourceTree = "<group>"; };
+		1F5DFA3C6BF89096B40F0FE1 /* Pods-Memes For All.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memes For All.debug.xcconfig"; path = "Target Support Files/Pods-Memes For All/Pods-Memes For All.debug.xcconfig"; sourceTree = "<group>"; };
+		5B307A347A00F231CC1536A0 /* Pods-Memes For All.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memes For All.release.xcconfig"; path = "Target Support Files/Pods-Memes For All/Pods-Memes For All.release.xcconfig"; sourceTree = "<group>"; };
+		DB8E6C570C675A6F098CBB63 /* Pods_Memes_For_All.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memes_For_All.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9BAECBF07264D601ED6587 /* Pods_Memes_For_All.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +61,11 @@
 		0628C546238D087600F9A77A = {
 			isa = PBXGroup;
 			children = (
+				0628C56C238D685800F9A77A /* Fonts */,
 				0628C551238D087600F9A77A /* Memes For All */,
 				0628C550238D087600F9A77A /* Products */,
+				582D2C9FD8493E6C26CB7C82 /* Pods */,
+				5863EE0CDE38BA6F4DCC66F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +80,63 @@
 		0628C551238D087600F9A77A /* Memes For All */ = {
 			isa = PBXGroup;
 			children = (
+				06D3B313238D87B7002AE447 /* ReusableCells */,
+				06D3B310238D77B2002AE447 /* ViewControllers */,
 				0628C552238D087600F9A77A /* AppDelegate.swift */,
 				0628C554238D087600F9A77A /* SceneDelegate.swift */,
-				0628C556238D087600F9A77A /* ViewController.swift */,
 				0628C558238D087600F9A77A /* Main.storyboard */,
 				0628C55E238D087900F9A77A /* Assets.xcassets */,
 				0628C560238D087900F9A77A /* LaunchScreen.storyboard */,
 				0628C563238D087900F9A77A /* Info.plist */,
 				0628C55B238D087600F9A77A /* Memes_For_All.xcdatamodeld */,
+				06D3B316238D8854002AE447 /* memeData.swift */,
 			);
 			path = "Memes For All";
+			sourceTree = "<group>";
+		};
+		0628C56C238D685800F9A77A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				06BD85A2238DB65C005FE4C3 /* impact.ttf */,
+				0628C56D238D687400F9A77A /* Amsterdam Personal Use.ttf */,
+				0628C56F238D698600F9A77A /* Billabong.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		06D3B310238D77B2002AE447 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0628C556238D087600F9A77A /* ViewController.swift */,
+				06D3B311238D77D9002AE447 /* SubmissionsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		06D3B313238D87B7002AE447 /* ReusableCells */ = {
+			isa = PBXGroup;
+			children = (
+				0628C569238D10D100F9A77A /* mainTableViewCell.swift */,
+				06D3B314238D87D8002AE447 /* submissionsCollectionViewCell.swift */,
+			);
+			path = ReusableCells;
+			sourceTree = "<group>";
+		};
+		582D2C9FD8493E6C26CB7C82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F5DFA3C6BF89096B40F0FE1 /* Pods-Memes For All.debug.xcconfig */,
+				5B307A347A00F231CC1536A0 /* Pods-Memes For All.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5863EE0CDE38BA6F4DCC66F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB8E6C570C675A6F098CBB63 /* Pods_Memes_For_All.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0628C566238D087900F9A77A /* Build configuration list for PBXNativeTarget "Memes For All" */;
 			buildPhases = (
+				A743409F61A55FE42F9779C1 /* [CP] Check Pods Manifest.lock */,
 				0628C54B238D087600F9A77A /* Sources */,
 				0628C54C238D087600F9A77A /* Frameworks */,
 				0628C54D238D087600F9A77A /* Resources */,
+				07128A8BAA6B9BF748C4242A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,12 +200,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				0628C562238D087900F9A77A /* LaunchScreen.storyboard in Resources */,
+				0628C56E238D687400F9A77A /* Amsterdam Personal Use.ttf in Resources */,
+				06BD85A3238DB65C005FE4C3 /* impact.ttf in Resources */,
 				0628C55F238D087900F9A77A /* Assets.xcassets in Resources */,
+				0628C570238D698600F9A77A /* Billabong.ttf in Resources */,
 				0628C55A238D087600F9A77A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07128A8BAA6B9BF748C4242A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memes For All/Pods-Memes For All-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memes For All/Pods-Memes For All-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Memes For All/Pods-Memes For All-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A743409F61A55FE42F9779C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memes For All-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0628C54B238D087600F9A77A /* Sources */ = {
@@ -143,8 +259,12 @@
 			files = (
 				0628C557238D087600F9A77A /* ViewController.swift in Sources */,
 				0628C553238D087600F9A77A /* AppDelegate.swift in Sources */,
+				06D3B312238D77D9002AE447 /* SubmissionsViewController.swift in Sources */,
+				0628C56A238D10D100F9A77A /* mainTableViewCell.swift in Sources */,
+				06D3B315238D87D8002AE447 /* submissionsCollectionViewCell.swift in Sources */,
 				0628C555238D087600F9A77A /* SceneDelegate.swift in Sources */,
 				0628C55D238D087600F9A77A /* Memes_For_All.xcdatamodeld in Sources */,
+				06D3B317238D8854002AE447 /* memeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +406,7 @@
 		};
 		0628C567238D087900F9A77A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F5DFA3C6BF89096B40F0FE1 /* Pods-Memes For All.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +424,7 @@
 		};
 		0628C568238D087900F9A77A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B307A347A00F231CC1536A0 /* Pods-Memes For All.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
