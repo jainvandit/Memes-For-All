@@ -10,7 +10,7 @@ The app uses a simple ```UITableView``` for the home screen and a simple ```UICo
 ### TagListView
 The ```TagListView``` library is implemented in each off the ```UITableViewCell```.
 
-<img src="https://raw.githubusercontent.com/jainvandit/Memes-For-All/master/Final%20Look%20Assets/TagListView.png">
+<img src="https://raw.githubusercontent.com/jainvandit/Memes-For-All/master/Final%20Look%20Assets/TagListView.png" width="250">
 
 ### GridView
 ```UICollectionViewCell``` is dimensioned such that only 2 columns fit the frame. Each cell has one ```UIImageView``` and two ```UILabels``` for the top text and bottom text. The ```impact``` font, generally used in memes is included in assets.
