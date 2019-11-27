@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0628C54F238D087600F9A77A /* Memes For All.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memes For All.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0628C54F238D087600F9A77A /* Memestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0628C552238D087600F9A77A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0628C554238D087600F9A77A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0628C556238D087600F9A77A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		0628C550238D087600F9A77A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0628C54F238D087600F9A77A /* Memes For All.app */,
+				0628C54F238D087600F9A77A /* Memestagram.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 			);
 			name = "Memes For All";
 			productName = "Memes For All";
-			productReference = 0628C54F238D087600F9A77A /* Memes For All.app */;
+			productReference = 0628C54F238D087600F9A77A /* Memestagram.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -416,7 +416,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jainvandit.Memes-For-All";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Memestagram;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -434,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jainvandit.Memes-For-All";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Memestagram;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
