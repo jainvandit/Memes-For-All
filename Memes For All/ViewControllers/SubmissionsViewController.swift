@@ -29,12 +29,13 @@ class SubmissionsViewController: UIViewController,UICollectionViewDataSource, UI
         super.viewDidLoad()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        getSubmissions()
+        getSubmissions() //Get the submissions data for the particular meme
         indicatorView = NVActivityIndicatorView(frame: CGRect(x: self.view.frame.width/2 - 15, y: self.view.frame.height/2 - 15 - (self.navigationController?.navigationBar.frame.height)! , width: 30, height: 30), type: NVActivityIndicatorType.ballPulseSync, color: UIColor.white, padding: 3)
         self.view.addSubview(indicatorView!)
         indicatorView?.startAnimating()
     }
 
+    ///Function to get submission data from API
     func getSubmissions(){
         guard let memeData = memeData else{
             return
@@ -71,7 +72,7 @@ class SubmissionsViewController: UIViewController,UICollectionViewDataSource, UI
             }
         }).resume()
     }
-    
+    ///Function to set up label in case no submissions are found
     func noDataLabel() -> UILabel{
         let label = UILabel(frame: CGRect(x: 0, y: self.view.frame.height/2 - 15, width: self.view.frame.width , height: 30))
         label.text = ":( No Submissions Yet"
@@ -93,12 +94,6 @@ class SubmissionsViewController: UIViewController,UICollectionViewDataSource, UI
         cell.memeImage.kf.setImage(with: URL(string: memeData.imageURLString)!)
         cell.topText.attributedText = NSAttributedString(string: submissions[indexPath.row].topText, attributes: [NSAttributedString.Key.strokeColor: UIColor.black, NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.strokeWidth: -3.0, NSAttributedString.Key.font: UIFont(name: "impact", size: 20)!])
         cell.bottomText.attributedText = NSAttributedString(string: submissions[indexPath.row].bottomText, attributes: [NSAttributedString.Key.strokeColor: UIColor.black, NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.strokeWidth: -3.0, NSAttributedString.Key.font: UIFont(name: "impact", size: 20)!])
-//        let inputDateFormatter = DateFormatter()
-//        inputDateFormatter.dateFormat = "YYYY-MM-DD HH:MM:SS"
-//        let date = inputDateFormatter.date(from: submissions[indexPath.row].date)
-//        let outputDateFormatter = DateFormatter()
-//        outputDateFormatter.dateFormat = "DD MMM YYYY"
-//        cell.dateText.text = outputDateFormatter.string(from: date!)
         return cell
     }
 
@@ -107,6 +102,7 @@ class SubmissionsViewController: UIViewController,UICollectionViewDataSource, UI
         return CGSize(width: collectionViewSize/2, height: (collectionViewSize + 90)/2)
     }
     
+    ///Function to show error when api fails to load data
     func showError(title:String, message:String){
         DispatchQueue.main.async {
             self.indicatorView?.stopAnimating()

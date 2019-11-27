@@ -24,15 +24,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         mainTableView.delegate = self
         mainTableView.dataSource = self
         mainTableView.rowHeight = 90
-        getDataFromAPI(pageNumber)
-        addTitle()
-        indicatorView = NVActivityIndicatorView(frame: CGRect(x: self.view.frame.width/2 - 15, y: self.view.frame.height/2 - 15 - (self.navigationController?.navigationBar.frame.height)! , width: 30, height: 30), type: NVActivityIndicatorType.ballPulseSync, color: UIColor.systemTeal, padding: 3)
-        bottomIndicatorView = NVActivityIndicatorView(frame: CGRect(x: self.view.frame.width/2 - 15, y: self.view.frame.height - 45 - (self.navigationController?.navigationBar.frame.height)! , width: 30, height: 30), type: NVActivityIndicatorType.ballPulseSync, color: UIColor.systemTeal, padding: 3)
+        getDataFromAPI(pageNumber)          //Fetch Page 1 data
+        addTitle()                          //Add Custom Title to NavBar
+        setUpIndicatorViews()               //Set up the frames of the indicator views.
         self.view.addSubview(indicatorView!)
         self.view.addSubview(bottomIndicatorView!)
-        indicatorView?.startAnimating()
+        indicatorView?.startAnimating()     //Shows indicator till the data is fetched
+    }
+    func setUpIndicatorViews(){
+        indicatorView = NVActivityIndicatorView(frame: CGRect(x: self.view.frame.width/2 - 15, y: self.view.frame.height/2 - 15 - (self.navigationController?.navigationBar.frame.height)! , width: 30, height: 30), type: NVActivityIndicatorType.ballPulseSync, color: UIColor.systemTeal, padding: 3)
+        bottomIndicatorView = NVActivityIndicatorView(frame: CGRect(x: self.view.frame.width/2 - 15, y: self.view.frame.height - 45 - (self.navigationController?.navigationBar.frame.height)! , width: 30, height: 30), type: NVActivityIndicatorType.ballPulseSync, color: UIColor.systemTeal, padding: 3)
     }
     
+    ///Function to execute reload actions
     @IBAction func reloadBtnPressed(_ sender: Any) {
         self.indicatorView?.startAnimating()
         self.memeData.removeAll()
@@ -42,6 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         pageNumber = 1
         getDataFromAPI(pageNumber)
     }
+    ///Function to add title to Navbar
     func addTitle(){
         let label = UILabel()
         label.text = "Memestagram"
@@ -67,6 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    ///Function to fetch next page data when user scrolls to bottom
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let bottomEdge = scrollView.contentOffset.y + scrollView.frame.size.height
         if(bottomEdge >= scrollView.contentSize.height){
@@ -81,12 +87,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    ///Function to get data from API
     func getDataFromAPI(_ pageNumber:Int){
         let APIURLString = "http://alpha-meme-maker.herokuapp.com/\(pageNumber)"
         if(pageNumber>1){
             bottomIndicatorView?.startAnimating()
         }
         URLSession.shared.dataTask(with: URL(string: APIURLString)!, completionHandler: {(data,response,error) in
+            ///Network Error
             guard let data = data, error == nil else{
                 self.showError(title: "Network Error", message: "Please check your connection and try again")
                 return
@@ -115,6 +123,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }).resume()
     }
 
+    ///Set the meme Id for the submissions view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destinationVC = segue.destination as? SubmissionsViewController else{
             return
@@ -122,6 +131,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         destinationVC.memeData = memeData[selectedMeme]
     }
     
+    ///Function to show error when api fails to load data
     func showError(title:String, message:String){
         DispatchQueue.main.async {
             self.indicatorView?.stopAnimating()
