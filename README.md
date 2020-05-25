@@ -2,6 +2,11 @@
 # Memestagram!
 Memestagram is a light weight iOS Application that lets you browse through the different meme templates and view individual submissions for the same.
 
+[![GitHub version](https://badge.fury.io/gh/jainvandit99%2FMemes-For-All.svg)](https://badge.fury.io/gh/jainvandit99%2FMemes-For-All)
+![Platform](https://img.shields.io/badge/platform-iOS-blue.svg)
+![badge-languages](https://img.shields.io/badge/swift-4.2%20%7C%205.0-red.svg)
+[![license](https://img.shields.io/github/license/jainvandit99/Memes-for-all.svg)](LICENSE)
+![Release](https://img.shields.io/github/release/jainvandit99/Memes-for-all.svg)
 ## Design
 The app uses a simple ```UITableView``` for the home screen and a simple ```UICollectionView``` to implement the grid on the submissions screen.
 
@@ -32,7 +37,9 @@ The [Meme Maker API](https://mememaker.github.io/API/) is used to get content. I
 * [```TagListView```](https://github.com/ElaWorkshop/TagListView) - is a simple and highly customizable iOS tag list view.
 
 ## Author
-* [Vandit Jain](https://www.github.com/jainvandit)
+[Vandit Jain](https://www.github.com/jainvandit99)
+[![GitHub followers](https://img.shields.io/github/followers/jainvandit99.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jainvandit99?tab=followers)  
+[![Twitter](https://img.shields.io/twitter/follow/jainvandit99?style=social)](https://twitter.com/jainvandit99)
 
 ## Acknowledgements
 This project is part of an interview task. The author holds full ownership to any part of the project that may be used as part of another project.
